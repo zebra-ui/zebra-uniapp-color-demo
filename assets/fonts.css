@@ -1,0 +1,24 @@
+@font-face {
+	font-family: "851";
+	src: url('https://cdn.zebraui.com/zebra-ui/851-basic.ttf')
+}
+
+@font-face {
+	font-family: "iconfont";
+	/* Project id 3690524 */
+	src: url('//at.alicdn.com/t/c/font_3690524_4jty7g3pwbg.woff2?t=1666086464005') format('woff2'),
+		url('//at.alicdn.com/t/c/font_3690524_4jty7g3pwbg.woff?t=1666086464005') format('woff'),
+		url('//at.alicdn.com/t/c/font_3690524_4jty7g3pwbg.ttf?t=1666086464005') format('truetype');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yanse:before {
+	content: "\e678";
+}
