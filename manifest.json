@@ -68,5 +68,13 @@
     "uniStatistics" : {
         "enable" : false
     },
-    "vueVersion" : "2"
+    "vueVersion" : "2",
+    "h5" : {
+        "router" : {
+            "base" : "/h5/",
+            "mode" : "history"
+        },
+        "template" : "template.h5.html",
+        "title" : "zebra-color"
+    }
 }

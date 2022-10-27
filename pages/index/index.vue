@@ -26,7 +26,7 @@
 		</view>
 		<view class="wrapper-content">
 			<view class="wrapper-content-chrome">
-				<zebra-color-picker v-model="colors" @input="colorInput"></zebra-color-picker>
+				<zebra-color-picker v-model="colors"></zebra-color-picker>
 			</view>
 			<view class="wrapper-content-sketch">
 				<zebra-color-picker-sketch v-model="colors1"></zebra-color-picker-sketch>
@@ -48,27 +48,6 @@
 				},
 			}
 		},
-		created() {
-			// uni.loadFontFace({
-			// 	global: true,
-			// 	family: '851',
-			// 	source: 'url("https://cdn.zebraui.com/zebra-ui/851-basic.ttf")',
-			// 	success() {
-			// 		console.log('success')
-			// 	},
-			// 	fail() {
-			// 		uni.showToast({
-			// 			title: '字体加载失败',
-			// 			icon: 'none'
-			// 		})
-			// 	}
-			// })
-		},
-		methods: {
-			colorInput(value) {
-				// console.log(value)
-			}
-		}
 	}
 </script>
 
@@ -76,6 +55,7 @@
 	@import '../../assets/fonts.css';
 
 	.wrapper {
+
 		.wrapper-content {
 			margin-top: 30rpx;
 			display: flex;
@@ -90,6 +70,11 @@
 		.wrapper-top {
 			margin-top: calc(env(safe-area-inset-bottom) + 80rpx);
 			padding: 50rpx;
+
+			@media only screen and (min-width: 760rpx) {
+				display: flex;
+				justify-content: center;
+			}
 
 			.wrapper-top-title {
 				font-size: 186rpx;
